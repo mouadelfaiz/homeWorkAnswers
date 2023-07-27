@@ -78,43 +78,50 @@
 //Methods, Revisited
 ///////////////////////////////////////////////
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-favMovies.push('Fight Club')
-favMovies.push('Interstaller')
-console.log(favMovies.indexOf('Titanic'));
-console.log(favMovies)
-// 1.//////////////////
-favMovies.sort()// this method it sort array element by alphabetic
-// 2.//////////////////////
-favMovies.pop()
-// 3.//////////////////////////
-favMovies.push("Guardians of the Galaxy")
-// 4.///////////////////////////////
-favMovies.reverse()
-// 5./////////////////////////////////////
-favMovies.shift()
-// 6./////////////////////////////////////////
-favMovies.unshift()// it does not do anything
-// 7.////////////////////////////////////////////////
-favMovies.splice(favMovies.indexOf('Django Unchained'),1, "Avatar")
-// 8.////////////////////////////////////////////////////////////
-console.log(favMovies.slice(0, Math.floor(favMovies.length / 2)))
-// 9.////////////////////////////////////////////////////////////////////
-let middleArr = favMovies.slice(0, Math.floor(favMovies.length / 2))
-// 10./////////////////////////////////////////////////////////////////////////////
-console.log(middleArr)
-// 11./////////////////////////////////////////////////////////////////////////////////////
-console.log(favMovies.indexOf("Fast and Furious"))// it give as the valua of 15 because the slice methods does not effect the original array
-//12./////////////////////////////////////////////////////////////////////////////////////////// 
-//we use const because we know that we are not going to change the favMovies array
+// favMovies.push('Fight Club')
+// favMovies.push('Interstaller')
+// console.log(favMovies.indexOf('Titanic'));
+// console.log(favMovies)
+// // 1.//////////////////
+// favMovies.sort()// this method it sort array element by alphabetic
+// // 2.//////////////////////
+// favMovies.pop()
+// // 3.//////////////////////////
+// favMovies.push("Guardians of the Galaxy")
+// // 4.///////////////////////////////
+// favMovies.reverse()
+// // 5./////////////////////////////////////
+// favMovies.shift()
+// // 6./////////////////////////////////////////
+// favMovies.unshift()// it does not do anything
+// // 7.////////////////////////////////////////////////
+// favMovies.splice(favMovies.indexOf('Django Unchained'),1, "Avatar")
+// // 8.////////////////////////////////////////////////////////////
+// console.log(favMovies.slice(0, Math.floor(favMovies.length / 2)))
+// // 9.////////////////////////////////////////////////////////////////////
+// let middleArr = favMovies.slice(0, Math.floor(favMovies.length / 2))
+// // 10./////////////////////////////////////////////////////////////////////////////
+// console.log(middleArr)
+// // 11./////////////////////////////////////////////////////////////////////////////////////
+// console.log(favMovies.indexOf("Fast and Furious"))// it give as the valua of 15 because the slice methods does not effect the original array
+// //12./////////////////////////////////////////////////////////////////////////////////////////// 
+// //we use const because we know that we are not going to change the favMovies array
 
 
 //////////////////////////////////////////////////
 //Where is Waldo
 //////////////////////////////////////////////////////////
 
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+                    whereIsWaldo.splice(1,1)
+                    whereIsWaldo[1].splice(2, 1, "No One")
+                    console.log(whereIsWaldo)
+                    console.log(whereIsWaldo[2][1][1])
 
 //////////////////////////////////////////////////////////////////
 //Excited Kitten
